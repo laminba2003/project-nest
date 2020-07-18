@@ -25,7 +25,7 @@ export class AuthService {
     if (registeredUser) {
       throw new HttpException({
         status: HttpStatus.CONFLICT,
-        error: 'this user is already registered',
+        message: 'this user is already registered',
       }, HttpStatus.CONFLICT); 
     } else {
       user.password = await bcrypt.hash(user.password, 10);
