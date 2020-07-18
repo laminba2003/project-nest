@@ -4,6 +4,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors();
   const options = new DocumentBuilder()
     .setTitle('Books API')
     .setDescription('This is an API to create and view books')
