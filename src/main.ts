@@ -11,6 +11,6 @@ async function bootstrap() {
     .addTag('books')
     .build();
   SwaggerModule.setup('api', app, SwaggerModule.createDocument(app, options));
-  await app.listen(process.env.PORT);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
