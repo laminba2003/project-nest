@@ -25,7 +25,7 @@ export class User extends Document {
 
     @Prop({ required: true })
     @ApiProperty({
-        description: 'The user password'
+        description: 'The user login password'
     })
     password: string;
     

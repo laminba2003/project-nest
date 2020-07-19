@@ -2,7 +2,7 @@
   BOOK REST API
 </h1>
 
-Find and create books. <a href="https://documenter.getpostman.com/view/12091966/T1DjkKuD?version=latest">Demo</a>
+Find and create books on MongoDB Atlas. <a href="https://documenter.getpostman.com/view/12091966/T1DjkKuD?version=latest">Demo</a>
 
 Made with NestJS And MongoDB.
 
@@ -26,6 +26,8 @@ $ npm run start:prod
 ```
 
 ## Testing the app
+
+Heroku app URL : https://warm-citadel-22388.herokuapp.com
 
 Postman Collection : https://documenter.getpostman.com/view/12091966/T1DjkKuD?version=latest
 
