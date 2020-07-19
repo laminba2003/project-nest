@@ -8,14 +8,14 @@ import { ApiTags, ApiResponse, ApiConsumes, ApiBody, ApiProduces, ApiHeader, Api
 @Controller('books')
 export class BooksController {
 
-    constructor(private service : BooksService) {}
+    constructor(private booksService : BooksService) {}
 
     @Get()
     @ApiOperation({ summary: 'Retrieve the list of public books' })
-    @ApiResponse({ status: 200, description: 'The public books has been successfully retrieved.', type : [Book] })
+    @ApiResponse({ status: 200, description: 'The public books have been successfully retrieved.', type : [Book] })
     @ApiProduces('application/json')
     async getPublicBooks(): Promise<Book[]> {
-        return this.service.getPublicBooks();
+        return this.booksService.getPublicBooks();
     }
 
     @UseGuards(JwtAuthGuard)
@@ -25,11 +25,11 @@ export class BooksController {
         name: 'Authorization',
         description: 'The Bearer JWT token.',
     })
-    @ApiResponse({ status: 200, description: 'The private books has been successfully retrieved.', type : [Book]})
+    @ApiResponse({ status: 200, description: 'The private books have been successfully retrieved.', type : [Book]})
     @ApiResponse({ status: 401, description: 'Unauthorized.'})
     @ApiProduces('application/json')
     async getPrivateBooks(): Promise<Book[]> {
-        return this.service.getPrivateBooks();
+        return this.booksService.getPrivateBooks();
     }
 
     @UseGuards(JwtAuthGuard)
@@ -53,7 +53,7 @@ export class BooksController {
     })
     @ApiProduces('application/json')
     async createBook(@Body() book: Book): Promise<Book> {
-        return this.service.createBook(book);
+        return this.booksService.createBook(book);
     }
 
 }
