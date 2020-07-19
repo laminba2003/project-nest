@@ -2,7 +2,7 @@
   BOOK REST API
 </h1>
 
-Find and create books on MongoDB Atlas with a REST API. <a href="https://documenter.getpostman.com/view/12091966/T1DjkKuD?version=latest">Demo</a>
+Find and create books on MongoDB Atlas through a REST API. <a href="https://documenter.getpostman.com/view/12091966/T1DjkKuD?version=latest">Demo</a>
 
 Made with NestJS and MongoDB.
 
