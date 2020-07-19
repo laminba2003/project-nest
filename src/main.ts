@@ -9,7 +9,7 @@ async function bootstrap() {
   app.useGlobalFilters(new AllExceptionsFilter());
   const options = new DocumentBuilder()
     .setTitle('Books API')
-    .setDescription('This is an API to create and view books')
+    .setDescription('This is an API to find and create books on MongoDB Atlas')
     .setVersion('1.0')
     .addTag('books')
     .build();
