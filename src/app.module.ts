@@ -6,10 +6,14 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [BooksModule, ConfigModule.forRoot({
+  imports: [
+    ConfigModule.forRoot({
     envFilePath: ['development.env', 'staging.env','production.env'],
     isGlobal: true,
-  }), MongooseModule.forRoot(process.env.MONGODB_URL), AuthModule, UsersModule],
+  }), 
+   MongooseModule.forRoot(process.env.MONGODB_URL), 
+   AuthModule, 
+   UsersModule,
+   BooksModule],
 })
 export class AppModule {}
-
