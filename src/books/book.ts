@@ -20,7 +20,7 @@ export class Book extends Document {
 
     @Prop({ required: true })
     @ApiProperty({
-        description: 'The book photo'
+        description: 'The book photo data encoded in Base64'
     })
     photo: string;
 

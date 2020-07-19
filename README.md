@@ -1,12 +1,10 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+<h1 align="center">
+  BOOK REST API
+</h1>
 
-  <p align="center">Book API</p>
+Find and create books. <a href="https://documenter.getpostman.com/view/12091966/T1DjkKuD?version=latest">Demo</a>
 
-## Description
-
-A Book API written with nestjs
+Made with NestJS And MongoDB.
 
 ## Installation
 
@@ -27,3 +25,11 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Testing the app
+
+Postman Collection : https://documenter.getpostman.com/view/12091966/T1DjkKuD?version=latest
+
+
+## Documentation
+
+Swagger UI : https://warm-citadel-22388.herokuapp.com/api/
