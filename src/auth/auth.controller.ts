@@ -14,7 +14,12 @@ export class AuthController {
   @Post('auth/login')
   @ApiResponse({ status: 201, description: 'Login successful.'})
   @ApiResponse({ status: 401, description: 'Unauthorized.'})
+  @ApiConsumes('application/json')
   @ApiProduces('application/json')
+  @ApiBody({
+    description: 'The request with the user credentials sent in the payload.',
+    type: Request,
+  })
   async login(@Request() req) {
     return this.authService.login(req.user);
   }
