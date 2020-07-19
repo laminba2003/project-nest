@@ -17,7 +17,7 @@ export class BooksService {
     }
 
     async createBook(book : Book): Promise<Book> {
-        return await this.bookModel.create(book);
+        return this.bookModel.create(book);
     }
 
 }

@@ -13,7 +13,7 @@ export class UsersService {
   }
 
   async createUser(user : User): Promise<User> {
-    return await this.userModel.create(user);
+    return this.userModel.create(user);
   }
 
 }
